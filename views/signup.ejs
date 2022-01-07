@@ -5,6 +5,28 @@
         <%- include('nav') %>
 
             <div class="mt-[7.8rem]">
+                <div class="mb-8 flex flex-around flex-wrap">
+                    <span id="userErr"
+                        class="invisible mx-auto text-center w-3/12 mr-4 px-4 py-2 bg-rose-700 text-gray-100 rounded">
+                        Username Too short!
+                    </span>
+                    <span id="passErr"
+                        class="invisible mx-auto text-center w-4/12 mr-4 px-4 py-2 bg-rose-700 text-gray-100 rounded">
+                        Password does not meet the requirements!
+                    </span>
+                    <span id="inputErr"
+                        class="invisible mx-auto text-center w-3/12 mr-4 px-4 py-2 bg-rose-700 text-gray-100 rounded">
+                        Length is too short!
+                    </span>
+                    <span id="usedErr"
+                        class="invisible mx-auto text-center w-5/12 mr-4 px-4 py-2 bg-rose-700 text-gray-100 rounded">
+                        Username Already in use!
+                    </span>
+                    <span id="succMsg"
+                        class="invisible mx-auto text-center w-6/12 mr-4 px-4 py-2 bg-green-400 text-gray-100 rounded">
+                        Your account was successfully made!
+                    </span>
+                </div>
                 <div class="relative w-9/12 mx-auto mb-10 xl:mb-[7rem] xl:w-6/12 2xl:5/12">
                     <!-- yellowbg -->
                     <div class="bg-gray-200 absolute shadow-xl -right-4 -bottom-4 h-full w-full rounded-xl shadow-xl">
@@ -56,7 +78,7 @@
                                         class="block w-max mx-auto -mt-3 px-4 text-center text-gray-500 bg-blue-100">Or</span>
                                 </div>
 
-                                <form onsubmit="frontValidator()" class="space-y-6 py-6 text-gray-900">
+                                <form class="space-y-6 py-6 text-gray-900">
                                     <div class="flex justify-between space-x-4">
                                         <div class="flex flex-col space-y-4 w-6/12">
                                             <div>
@@ -105,7 +127,6 @@
                                         </a>
                                     </div>
                                 </form>
-                                <div class="border-t pt-8"></div>
                                 <div class="flex justify-between items-center">
                                     <a href="/"
                                         class="font-extrabold bg-blue-100 hover:bg-blue-200 text-black rounded shadow-xl px-12 py-3 text-white text-center w-48">

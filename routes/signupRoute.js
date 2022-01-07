@@ -42,6 +42,7 @@ router.post("/", async (req, res) => {
       firstname: firstname, 
       lastname: lastname, 
       password: password,
+      gender: gender,
     })
       
     NEW_USER.save((err, user) => {
